@@ -10,7 +10,7 @@ export default function ThankYou (props) {
         <div className="thank-you-container">
         <img src={props.image} />
         <div className="thank-you-rating">
-            <p className="thank-you-rating-text">You selected out {props.selectedRating} of 5</p>
+            <p className="thank-you-rating-text">You selected {props.selectedRating} out of 5</p>
         </div>
         <h1 className="main-text">Thank you!</h1>
         <p className="thank-you-message">We appreciate you taking the time to give a rating.
