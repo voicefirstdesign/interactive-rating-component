@@ -1,38 +1,113 @@
-.App {
+.app-container{
+  background-color: hsl(216, 12%, 8%);
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rating-container{
+  height: 400px;
+  width: 400px;
+  background-color: hsl(210, 17%, 14%);
+  border-radius: 50px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.star-icon{
+  background-color: hsl(218, 14%, 23%);
+  font-size: 2em;
+  padding: 10px;
+  border-radius: 100%;
+  color: hsl(25, 97%, 53%);
+  
+}
+
+.main-text{
+  color: whitesmoke;
+}
+
+.button-container{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 0px;
+}
+
+.btn {
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  color: hsl(216, 12%, 54%);
+  background-color: hsl(218, 14%, 23%);
+  border: none;
+
+ 
+}
+.btn-selected{
+  background-color:hsl(25, 97%, 53%) ;
+  color: white;
+}
+.btn-inactive:hover {
+  background-color: hsl(217, 12%, 63%);
+  color: white;
+}
+
+.btn-submit{
+  color: white;
+  border: none;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 50px;
+  margin-top: 30px;
+  background-color: hsl(25, 97%, 53%);
+  font-weight: bold;
+}
+.btn-submit:hover{
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+}
+
+.thank-you-message{
+  color: rgb(219, 211, 211);
   text-align: center;
+  
+}
+p{
+  line-height: 1.5em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.thank-you-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.thank-you-rating{
+  background-color: hsl(218, 14%, 23%);
+  border-radius: 20px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 10px 10px;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.thank-you-rating-text {
+  padding: 0px;
+  margin: 0px;
+  color: hsl(25, 97%, 53%);
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img{
+  padding-top:30px;
 }
